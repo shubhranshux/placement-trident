@@ -28,12 +28,12 @@ export default function PlacementFacilities() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full bg-gradient-to-tr from-[#2C3A8C]/[0.08] to-transparent blur-[120px]" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         
         {/* Header */}
         <div className="mb-20 text-center">
           <FadeInUp>
-            <h2 className="serif text-5xl md:text-7xl font-light text-white mb-8 tracking-wide">
+            <h2 className="serif text-4xl sm:text-5xl md:text-7xl font-light text-white mb-8 tracking-wide">
               World-Class <span className="italic font-serif text-[#E8BD63]">Facilities</span>
             </h2>
             <p className="text-white/50 text-xl font-light leading-relaxed max-w-3xl mx-auto">
@@ -43,14 +43,14 @@ export default function PlacementFacilities() {
         </div>
 
         {/* Cinematic Immersive Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-32 h-auto md:h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-20 md:mb-32 h-auto md:h-[600px]">
           {/* Main Large Auditorium Image */}
-          <FadeInUp className="w-full h-[400px] md:h-full relative overflow-hidden rounded-l-3xl rounded-r-none group">
+          <FadeInUp className="w-full h-[280px] sm:h-[400px] md:h-full relative overflow-hidden rounded-t-3xl md:rounded-t-none md:rounded-l-3xl group">
             <div className="absolute inset-0 bg-[#111827]/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <img src="/images/audi.jpg" alt="Auditorium" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
           </FadeInUp>
           
-          <div className="grid grid-cols-2 grid-rows-2 gap-2 h-full">
+          <div className="grid grid-cols-2 grid-rows-2 gap-2 h-[250px] sm:h-[300px] md:h-full">
             <FadeInUp delay={100} className="w-full h-full relative overflow-hidden group">
               <div className="absolute inset-0 bg-[#111827]/30 z-10 group-hover:bg-transparent transition-colors duration-700" />
               <img src="/images/GD-Halls.jpg" alt="Group Discussion" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
@@ -71,10 +71,10 @@ export default function PlacementFacilities() {
         </div>
 
         {/* Immersive Overlay Stats (No Cards) */}
-        <div className="flex flex-wrap justify-center gap-12 lg:gap-20">
+        <div className="flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-20">
           {facilities.map((fac, i) => (
             <FadeInUp key={fac.label} delay={200 + i * 100} className="text-center group">
-              <div className="serif text-5xl md:text-6xl font-light text-white mb-2 group-hover:text-[#E8BD63] transition-colors">{fac.value}</div>
+              <div className="serif text-3xl sm:text-5xl md:text-6xl font-light text-white mb-2 group-hover:text-[#E8BD63] transition-colors">{fac.value}</div>
               <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">{fac.label}</div>
             </FadeInUp>
           ))}

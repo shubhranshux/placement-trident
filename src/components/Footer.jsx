@@ -28,7 +28,7 @@ export default function Footer() {
         <img src={logo} alt="" className="w-[400px] h-[400px] object-contain transform translate-y-16 translate-x-16" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         
 
 
@@ -68,7 +68,7 @@ export default function Footer() {
 
 
             {/* Links Columns */}
-            <div className="lg:col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
               {[
                 { h:"Academics & Student Life", ls:[
                   { t:"Library", h:"#" },
@@ -100,7 +100,7 @@ export default function Footer() {
                 <div key={col.h}>
                   <div className="relative mb-10">
                     <div className="absolute -left-4 top-0 w-8 h-8 bg-[#8B6E66]/10 -skew-x-12"></div>
-                    <h5 className="font-serif text-white font-bold text-[15px] uppercase tracking-widest relative z-10 whitespace-nowrap">{col.h}</h5>
+                    <h5 className="font-serif text-white font-bold text-[15px] uppercase tracking-widest relative z-10">{col.h}</h5>
                   </div>
                   <ul className="space-y-5">
                     {col.ls.map((link) => (

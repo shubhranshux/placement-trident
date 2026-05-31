@@ -38,7 +38,7 @@ export default function PlacementBranches() {
         <div className="max-w-[1400px] mx-auto px-6 xl:px-12 text-center mb-16">
           <FadeInUp>
             <span className="text-[10px] font-extrabold uppercase tracking-[0.35em] text-[#A59381] block mb-4">Discipline Breakdown</span>
-            <h2 className="serif text-5xl md:text-6xl lg:text-7xl font-bold text-[#1A2660] mb-6 leading-tight">
+            <h2 className="serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#1A2660] mb-6 leading-tight">
               Branch-wise <span className="italic font-light text-[#A59381] font-serif">Placements</span>
             </h2>
             <p className="text-[#3E3A36]/75 text-lg max-w-2xl mx-auto font-light leading-relaxed">
@@ -142,10 +142,10 @@ export default function PlacementBranches() {
                   key={branch.id} 
                   intensity={6} 
                   scale={1.015} 
-                  className="w-[340px] md:w-[360px] flex-shrink-0"
+                  className="w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0"
                 >
                   {/* card-frame */}
-                  <div className={`p-8 ${colors.frameBg} rounded-[24px] flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-500 h-[380px]`}>
+                  <div className={`p-6 sm:p-8 ${colors.frameBg} rounded-[24px] flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-500 h-[340px] sm:h-[380px]`}>
                     
                     {/* card */}
                     <div className={`w-full bg-white rounded-[20px] border ${colors.border} overflow-hidden h-full flex flex-col justify-between`}>

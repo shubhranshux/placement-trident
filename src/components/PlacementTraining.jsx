@@ -125,8 +125,10 @@ export default function PlacementTraining() {
       {/* All 4 Corner Geometric Decorations */}
       <CornerDecor position="top-left" />
       <CornerDecor position="top-right" />
-      <CornerDecor position="bottom-left" />
-      <CornerDecor position="bottom-right" />
+      <div className="hidden md:block">
+        <CornerDecor position="bottom-left" />
+        <CornerDecor position="bottom-right" />
+      </div>
 
       {/* Logo watermark top-right */}
       <div className="absolute top-6 right-6 md:top-8 md:right-10 z-20 flex items-center gap-2">
@@ -138,7 +140,7 @@ export default function PlacementTraining() {
         </span>
       </div>
 
-      <div className="max-w-[1300px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
 
         {/* Header */}
         <div className="text-center mb-20 lg:mb-28">
@@ -149,7 +151,7 @@ export default function PlacementTraining() {
                 Industry Readiness Framework
               </span>
             </div>
-            <h2 className="text-5xl md:text-6xl lg:text-8xl font-black text-[#1A2660] leading-[0.95] tracking-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-[#1A2660] leading-[0.95] tracking-tight mb-6">
               Our 4-Vertical<br />
               <span className="italic font-light font-serif text-[#1A2660]/50">Training Model</span>
             </h2>
@@ -180,7 +182,7 @@ export default function PlacementTraining() {
                       {/* Giant Number + Icon */}
                       <div className="flex items-center gap-5 md:w-[280px] lg:w-[320px] flex-shrink-0">
                         <span
-                          className="text-[5rem] md:text-[6.5rem] lg:text-[8rem] font-black leading-none text-[#1A2660] tracking-tighter transition-all duration-500 select-none"
+                          className="text-[3.5rem] sm:text-[5rem] md:text-[6.5rem] lg:text-[8rem] font-black leading-none text-[#1A2660] tracking-tighter transition-all duration-500 select-none"
                           style={{
                             opacity: isActive ? 1 : 0.12,
                             transform: isActive ? "translateX(0)" : "translateX(-4px)",
@@ -202,7 +204,7 @@ export default function PlacementTraining() {
                       <div className="flex-1 md:pt-4">
                         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
                           <h3
-                            className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1A2660] leading-[1.05] mb-4 lg:mb-0 lg:w-[380px] lg:flex-shrink-0 transition-all duration-300"
+                            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#1A2660] leading-[1.05] mb-4 lg:mb-0 lg:w-[380px] lg:flex-shrink-0 transition-all duration-300"
                             style={{ opacity: isActive ? 1 : 0.7 }}
                           >
                             {mod.title}

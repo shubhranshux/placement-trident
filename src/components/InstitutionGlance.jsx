@@ -50,10 +50,10 @@ export default function InstitutionGlance() {
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(#4A90E2 1px, transparent 1px), linear-gradient(90deg, #4A90E2 1px, transparent 1px)", backgroundSize: "100px 100px" }} />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         
         {/* Floating Numbers (No Cards, Dynamic GSAP Counters) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 pb-24 border-b border-white/5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-16 pb-24 border-b border-white/5">
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
@@ -66,7 +66,7 @@ export default function InstitutionGlance() {
                     <Icon size={18} />
                   </div>
 
-                  <span className="serif text-5xl md:text-6xl lg:text-7xl font-light text-white block mb-4 tracking-tighter">
+                  <span className="serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white block mb-4 tracking-tighter">
                     <GSAPCounter end={stat.value} />
                   </span>
                   <span className="text-[10px] font-extrabold text-[#E8BD63] uppercase tracking-[0.25em]">{stat.label}</span>
@@ -82,7 +82,7 @@ export default function InstitutionGlance() {
             <span className="text-[10px] font-extrabold uppercase tracking-[0.4em] text-white/30 block mb-6">
               Institutional Capacity
             </span>
-            <h3 className="serif text-4xl md:text-5xl font-light text-white mb-16">
+            <h3 className="serif text-3xl sm:text-4xl md:text-5xl font-light text-white mb-16">
               Faculty Strength <span className="italic font-serif text-[#4A90E2]">Distribution</span>
             </h3>
             

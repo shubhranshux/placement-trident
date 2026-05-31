@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeInUp } from "../utils/animations";
-import { Building2, BookOpen, UserCheck, TrendingUp, MessageSquare, FileText, Phone, Mail, GraduationCap, ArrowRight, Quote } from "lucide-react";
+import { Building2, BookOpen, UserCheck, TrendingUp, MessageSquare, FileText, Phone, Mail, GraduationCap, ArrowRight, Quote, BarChart3, Monitor } from "lucide-react";
 
 const sidebarLinks = [
   { id: "department", label: "The Department", icon: Building2 },
@@ -50,7 +50,7 @@ export default function PlacementSidebar() {
         </svg>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Sticky Sidebar */}
@@ -130,7 +130,7 @@ export default function PlacementSidebar() {
                   <div className="space-y-10">
                     <div>
                       <div className="w-20 h-1 bg-gradient-to-r from-[#E8BD63] to-[#2C3A8C] mb-6 rounded-full" />
-                      <h2 className="serif text-5xl md:text-6xl font-light text-[#3E3A36] leading-tight">
+                      <h2 className="serif text-4xl sm:text-5xl md:text-6xl font-light text-[#3E3A36] leading-tight">
                         The <span className="italic font-bold text-[#2C3A8C] font-serif">Department</span>
                       </h2>
                     </div>
@@ -199,7 +199,7 @@ export default function PlacementSidebar() {
                   <div className="space-y-10">
                     <div>
                       <div className="w-20 h-1 bg-gradient-to-r from-[#E8BD63] to-[#2C3A8C] mb-6 rounded-full" />
-                      <h2 className="serif text-5xl md:text-6xl font-light text-[#3E3A36] leading-tight">
+                      <h2 className="serif text-4xl sm:text-5xl md:text-6xl font-light text-[#3E3A36] leading-tight">
                         Placement <span className="italic font-bold text-[#2C3A8C] font-serif">Infrastructure</span>
                       </h2>
                     </div>
@@ -210,18 +210,23 @@ export default function PlacementSidebar() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                       {[
-                        { title: "Interview Chambers", desc: "6 fully air-conditioned, soundproofed interview suites with dual fiber-backed videoconferencing setups.", icon: "🏢" },
-                        { title: "GD Hall", desc: "Dedicated group discussion lounge configured for 30+ candidates with active observation desks.", icon: "💬" },
-                        { title: "Presentation Hall", desc: "200-seat digital auditorium with projection systems and acoustic tuning for pre-placement talks.", icon: "📊" },
-                        { title: "Computer Lab", desc: "150+ high-end workstations with dedicated high-speed internet portals for online coding tests.", icon: "💻" },
-                      ].map((facility) => (
+                        { title: "Interview Chambers", desc: "6 fully air-conditioned, soundproofed interview suites with dual fiber-backed videoconferencing setups.", icon: Building2 },
+                        { title: "GD Hall", desc: "Dedicated group discussion lounge configured for 30+ candidates with active observation desks.", icon: MessageSquare },
+                        { title: "Presentation Hall", desc: "200-seat digital auditorium with projection systems and acoustic tuning for pre-placement talks.", icon: BarChart3 },
+                        { title: "Computer Lab", desc: "150+ high-end workstations with dedicated high-speed internet portals for online coding tests.", icon: Monitor },
+                      ].map((facility) => {
+                        const FacilityIcon = facility.icon;
+                        return (
                         <div key={facility.title} className="p-8 bg-white rounded-3xl border border-[#EFE7DF] relative overflow-hidden group hover:border-[#E8BD63]/40 hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-500">
                           <div className="absolute top-0 right-0 w-28 h-28 bg-[#E8BD63]/5 rounded-full blur-[35px] group-hover:bg-[#E8BD63]/10 transition-all duration-500" />
-                          <span className="text-4xl mb-5 block">{facility.icon}</span>
+                          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1A2660] to-[#2C3A8C] flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                            <FacilityIcon size={22} className="text-[#E8BD63]" />
+                          </div>
                           <h4 className="font-extrabold text-[#3E3A36] text-lg mb-2">{facility.title}</h4>
                           <p className="text-[#3E3A36]/60 text-[14.5px] leading-relaxed font-light">{facility.desc}</p>
                         </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </div>
                 )}

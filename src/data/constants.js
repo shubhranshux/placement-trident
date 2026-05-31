@@ -47,11 +47,11 @@ export const EVENTS = [
 ];
 
 export const PROGRAMS = [
-  { name:"Computer Science & Engineering", dept:"B.Tech", icon:"💻", dur:"4 Years", seats:180, href:"https://academics-tat.tekkzy.com/computer-science-engineering" },
-  { name:"Electronics & Communication",    dept:"B.Tech", icon:"📡", dur:"4 Years", seats:120, href:"https://academics-tat.tekkzy.com/electronics-and-telecommunication-engineering" },
-  { name:"Mechanical Engineering",          dept:"B.Tech", icon:"⚙️",  dur:"4 Years", seats:120, href:"https://academics-tat.tekkzy.com/mechanical-engineering" },
-  { name:"Civil Engineering",               dept:"B.Tech", icon:"🏗️", dur:"4 Years", seats:60,  href:"https://academics-tat.tekkzy.com/civil-engineering" },
-  { name:"Electrical & Electronics",        dept:"B.Tech", icon:"⚡", dur:"4 Years", seats:60,  href:"https://academics-tat.tekkzy.com/electricals-and-electronics-engineering" },
+  { name:"Computer Science & Engineering", dept:"B.Tech", icon:"monitor", dur:"4 Years", seats:180, href:"https://academics-tat.tekkzy.com/computer-science-engineering" },
+  { name:"Electronics & Communication",    dept:"B.Tech", icon:"radio", dur:"4 Years", seats:120, href:"https://academics-tat.tekkzy.com/electronics-and-telecommunication-engineering" },
+  { name:"Mechanical Engineering",          dept:"B.Tech", icon:"settings",  dur:"4 Years", seats:120, href:"https://academics-tat.tekkzy.com/mechanical-engineering" },
+  { name:"Civil Engineering",               dept:"B.Tech", icon:"building", dur:"4 Years", seats:60,  href:"https://academics-tat.tekkzy.com/civil-engineering" },
+  { name:"Electrical & Electronics",        dept:"B.Tech", icon:"zap", dur:"4 Years", seats:60,  href:"https://academics-tat.tekkzy.com/electricals-and-electronics-engineering" },
 ];
 
 export const RECRUITERS = ["TCS","Infosys","Wipro","HCL","Capgemini","Accenture","Cognizant","Tech Mahindra","L&T Infotech","IBM","Hexaware","Mphasis"];

@@ -22,10 +22,11 @@ export default function App() {
         }
 
         html { scroll-behavior: auto; }
-        body { font-family: 'Inter', 'DM Sans', sans-serif; background-color: var(--bg-light); color: var(--text-dark); font-weight: 400; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        body { font-family: 'Inter', 'DM Sans', sans-serif; background-color: var(--bg-light); color: var(--text-dark); font-weight: 400; font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        @media (min-width: 768px) { body { font-size: 18px; } }
         .serif { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; }
         h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; }
-        p { font-size: 18px; line-height: 1.75; font-weight: 400; letter-spacing: -0.01em; }
+        p { font-size: inherit; line-height: 1.75; font-weight: 400; letter-spacing: -0.01em; }
         
         .bg-primary { background-color: var(--primary-rose) !important; color: white; }
         .bg-secondary { background-color: var(--secondary-beige) !important; color: white; }

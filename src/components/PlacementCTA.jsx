@@ -24,14 +24,14 @@ export default function PlacementCTA() {
         <div className="absolute bottom-[-10%] left-[-5%] w-[30%] h-[50%] bg-white/40 rounded-full blur-[120px]" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
           {/* LEFT: Contact Directory (6 cols) */}
           <div className="lg:col-span-6">
             <FadeInUp>
               <span className="text-[10px] font-extrabold uppercase tracking-[0.4em] text-[#A59381] block mb-4">Connect Directly</span>
-              <h2 className="serif text-5xl md:text-6xl font-light text-[#3E3A36] mb-8 leading-tight">
+              <h2 className="serif text-4xl sm:text-5xl md:text-6xl font-light text-[#3E3A36] mb-8 leading-tight">
                 Training & <span className="italic font-bold text-[#2C3A8C] font-serif">Placement Cell</span>
               </h2>
               <p className="text-[#3E3A36]/65 text-lg font-light leading-relaxed mb-12 max-w-lg">
@@ -56,7 +56,7 @@ export default function PlacementCTA() {
                     </div>
                     <div>
                       <span className="text-[9px] font-extrabold uppercase tracking-[0.3em] text-[#A59381] block mb-0.5 group-hover/item:text-[#2C3A8C] transition-colors duration-500">{label}</span>
-                      <span className="text-[#3E3A36] font-extrabold text-[15px] group-hover/item:text-[#1A2660] transition-colors duration-500">{value}</span>
+                      <span className="text-[#3E3A36] font-extrabold text-[14px] sm:text-[15px] group-hover/item:text-[#1A2660] transition-colors duration-500 break-words">{value}</span>
                     </div>
                   </a>
                 ))}
@@ -68,7 +68,7 @@ export default function PlacementCTA() {
           <div className="lg:col-span-6 w-full">
             <FadeInUp delay={200}>
               <Tilt3D intensity={8} scale={1.015} className="w-full">
-                <div className="relative p-10 md:p-14 bg-gradient-to-br from-[#1A2660] via-[#2C3A8C] to-[#111827] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(26,38,96,0.25)] border border-[#E8BD63]/25 group">
+                <div className="relative p-7 sm:p-10 md:p-14 bg-gradient-to-br from-[#1A2660] via-[#2C3A8C] to-[#111827] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(26,38,96,0.25)] border border-[#E8BD63]/25 group">
                   {/* Glowing decorative corner lights */}
                   <div className="absolute top-[-10%] right-[-10%] w-56 h-56 bg-[#E8BD63]/15 rounded-full blur-[80px] pointer-events-none group-hover:opacity-80 transition-opacity" />
                   <div className="absolute bottom-[-10%] left-[-10%] w-48 h-48 bg-[#4A6CC4]/20 rounded-full blur-[65px] pointer-events-none" />

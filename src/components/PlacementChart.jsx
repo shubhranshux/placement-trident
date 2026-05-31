@@ -43,7 +43,7 @@ export default function PlacementChart() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
             <div>
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#A59381] block mb-3">Past 5 Years Overview</span>
-              <h3 className="serif text-4xl md:text-5xl lg:text-6xl font-black text-[#1A2660] leading-[1]">
+              <h3 className="serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#1A2660] leading-[1]">
                 Placement<br />
                 <span className="italic font-light font-serif text-[#A59381]">Statistics</span>
               </h3>
@@ -56,7 +56,7 @@ export default function PlacementChart() {
                   <Briefcase size={14} className="text-[#1A2660]" />
                   <span className="text-[10px] font-black uppercase tracking-widest text-[#1A2660]/40">Total Placed</span>
                 </div>
-                <span className="text-4xl md:text-5xl font-black text-[#1A2660] tracking-tight">{totalPlaced.toLocaleString()}</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1A2660] tracking-tight">{totalPlaced.toLocaleString()}</span>
               </div>
               <div className="w-px bg-[#1A2660]/10" />
               <div className="text-right">
@@ -64,7 +64,7 @@ export default function PlacementChart() {
                   <GraduationCap size={14} className="text-[#E8BD63]" />
                   <span className="text-[10px] font-black uppercase tracking-widest text-[#1A2660]/40">Higher Studies</span>
                 </div>
-                <span className="text-4xl md:text-5xl font-black text-[#E8BD63] tracking-tight">{totalStudies}</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl font-black text-[#E8BD63] tracking-tight">{totalStudies}</span>
               </div>
             </div>
           </div>

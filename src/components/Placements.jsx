@@ -212,7 +212,7 @@ export default function Placements() {
         <div className="absolute bottom-[-10%] right-[-5%] w-[800px] h-[800px] rounded-full border-[1px] border-[#1A2660]/5" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-20">
@@ -223,7 +223,7 @@ export default function Placements() {
             </div>
           </SlideIn>
           <FadeInUp delay={200}>
-            <h2 className="serif text-5xl md:text-6xl lg:text-7xl font-bold text-[#1A2660] mb-6 leading-[1.05] tracking-tight">
+            <h2 className="serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#1A2660] mb-6 leading-[1.05] tracking-tight">
               Our graduates are everywhere{" "}
               <br className="hidden md:block" />
               <span className="italic text-[#2C3A8C] font-serif font-light">
@@ -243,13 +243,13 @@ export default function Placements() {
       {/* "At a Glance" Style Metrics Dashboard */}
       <div className="relative z-10 w-full mb-20 py-16 lg:py-24 overflow-hidden">
         {/* Slanted Background Blocks inside fluid waves */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A2660] to-[#2C3A8C] skew-x-[-12deg] scale-125 origin-center shadow-[0_15px_35px_rgba(26,38,96,0.15)] opacity-95" />
-        <div className="absolute inset-0 bg-[#E8BD63] skew-x-[-12deg] scale-125 translate-x-[25%] opacity-15 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1A2660] to-[#2C3A8C] sm:skew-x-[-12deg] sm:scale-125 origin-center shadow-[0_15px_35px_rgba(26,38,96,0.15)] opacity-95" />
+        <div className="absolute inset-0 bg-[#E8BD63] sm:skew-x-[-12deg] sm:scale-125 sm:translate-x-[25%] opacity-15 pointer-events-none" />
         
         {/* Decorative Wireframe Diamond */}
         <div className="absolute right-[5%] lg:right-[15%] top-1/2 -translate-y-1/2 w-40 h-40 border border-white/10 rotate-45 pointer-events-none hidden md:block" />
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-12 lg:gap-y-0">
             {stats.map((s, i) => (
               <FadeInUp key={s.label} delay={200 + i * 100} className="w-full sm:w-1/2 lg:flex-1 flex justify-center">
@@ -280,7 +280,7 @@ export default function Placements() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Luminous Section Divider */}
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#2C3A8C]/20 to-transparent mb-20 relative">
@@ -291,7 +291,7 @@ export default function Placements() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch mb-24">
           
           {/* LEFT: Domain Recruiter Constellation (7 cols) */}
-          <div className="lg:col-span-7 flex flex-col justify-between">
+          <div className="lg:col-span-7 min-w-0 w-full flex flex-col justify-between">
             <div className="mb-8">
               <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#A59381] block mb-3">
                 Industry Alignments
@@ -301,12 +301,12 @@ export default function Placements() {
               </h3>
 
               {/* Central Domain Switcher Selector Tab */}
-              <div className="flex flex-wrap p-1 bg-[#1A2660]/5 backdrop-blur-md rounded-2xl border border-[#1A2660]/10 max-w-full md:max-w-max gap-1">
+              <div className="flex flex-nowrap p-1 bg-[#1A2660]/5 backdrop-blur-md rounded-2xl border border-[#1A2660]/10 max-w-full overflow-x-auto gap-1 scrollbar-none">
                 {Object.entries(domains).map(([key, domain]) => (
                   <button
                     key={key}
                     onClick={() => setActiveTab(key)}
-                    className={`py-3 px-6 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-500 whitespace-nowrap ${
+                    className={`py-2.5 sm:py-3 px-4 sm:px-6 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-500 whitespace-nowrap flex-shrink-0 ${
                       activeTab === key
                         ? "bg-[#1A2660] text-white shadow-lg scale-105"
                         : "text-[#1A2660]/60 hover:text-[#1A2660] hover:bg-white/40"
@@ -331,7 +331,7 @@ export default function Placements() {
           </div>
 
           {/* RIGHT: SVG Chart Dashboard (5 cols) - Exquisite Dark Navy Card */}
-          <div className="lg:col-span-5 relative flex flex-col justify-between h-full p-8 lg:p-10 bg-gradient-to-br from-[#1A2660] to-[#2C3A8C] rounded-[2.2rem] border border-[#E8BD63]/25 shadow-[0_20px_50px_rgba(26,38,96,0.22)]">
+          <div className="lg:col-span-5 min-w-0 w-full relative flex flex-col justify-between h-full p-6 md:p-8 lg:p-10 bg-gradient-to-br from-[#1A2660] to-[#2C3A8C] rounded-[2.2rem] border border-[#E8BD63]/25 shadow-[0_20px_50px_rgba(26,38,96,0.22)]">
             {/* Chart Header */}
             <div>
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#E8BD63] block mb-1">
@@ -524,7 +524,7 @@ export default function Placements() {
                 style={{ animation: 'scroll-cards 30s linear infinite', width: 'max-content' }}
               >
                 {[...dummyPlacements, ...dummyPlacements].map((student, i) => (
-                  <div key={i} className="group relative flex-shrink-0 w-[300px]">
+                  <div key={i} className="group relative flex-shrink-0 w-[260px] sm:w-[300px]">
                     <div className="relative h-[380px] rounded-[1.8rem] overflow-hidden shadow-[0_15px_35px_rgba(26,38,96,0.06)] hover:shadow-2xl transition-all duration-500">
                       <img
                         src={student.img}

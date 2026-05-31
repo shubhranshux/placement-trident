@@ -225,7 +225,7 @@ export default function PlacementProcess() {
                 Onboarding Flow
               </span>
             </div>
-            <h2 className="serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A2660] mb-4">
+            <h2 className="serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A2660] mb-4">
               Placement <span className="italic font-light text-[#A59381] font-serif">Process.</span>
             </h2>
             <p className="text-[#3E3A36]/65 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
@@ -249,7 +249,7 @@ export default function PlacementProcess() {
                 {/* 1. IMAGE BLOB CONTAINER COLUMN */}
                 <div className={`lg:col-span-5 flex justify-center ${isEven ? "lg:order-1" : "lg:order-2"}`}>
                   <FadeInUp delay={idx * 100}>
-                    <div className="relative w-56 h-56 sm:w-60 sm:h-60 md:w-68 md:h-68 group cursor-pointer">
+                    <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-60 md:h-60 lg:w-68 lg:h-68 group cursor-pointer">
                       
                       {/* Interactive Colored Ambient Halo Behind Blob */}
                       <div

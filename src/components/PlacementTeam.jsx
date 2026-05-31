@@ -39,12 +39,12 @@ export default function PlacementTeam() {
         </svg>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-6 xl:px-12 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 xl:px-12 relative z-10">
         
         {/* Header */}
         <div className="mb-20">
           <FadeInUp>
-            <h2 className="serif text-5xl md:text-6xl font-light text-[#111827] mb-6">
+            <h2 className="serif text-4xl sm:text-5xl md:text-6xl font-light text-[#111827] mb-6">
               Training & Placement <span className="italic font-serif text-[#2C3A8C] font-bold">Team</span>
             </h2>
             <p className="text-[#3E3A36]/60 text-xl font-light leading-relaxed max-w-2xl">
@@ -60,7 +60,7 @@ export default function PlacementTeam() {
               <div className="group flex flex-col md:flex-row md:items-center py-6 border-b border-[#EFE7DF] hover:border-[#2C3A8C] transition-colors duration-500 cursor-default">
                 
                 <div className="w-full md:w-2/5 mb-2 md:mb-0">
-                  <h4 className="serif text-2xl font-bold text-[#111827] group-hover:text-[#2C3A8C] transition-colors duration-300">
+                  <h4 className="serif text-xl sm:text-2xl font-bold text-[#111827] group-hover:text-[#2C3A8C] transition-colors duration-300">
                     {member.name}
                   </h4>
                 </div>
@@ -72,7 +72,7 @@ export default function PlacementTeam() {
                 </div>
                 
                 <div className="w-full md:w-1/4 mb-2 md:mb-0">
-                  <a href={`mailto:${member.email}`} className="text-[#111827]/70 font-medium hover:text-[#2C3A8C] transition-colors">
+                  <a href={`mailto:${member.email}`} className="text-[#111827]/70 text-sm font-medium hover:text-[#2C3A8C] transition-colors break-all">
                     {member.email}
                   </a>
                 </div>

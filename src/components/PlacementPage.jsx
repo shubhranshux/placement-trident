@@ -24,8 +24,8 @@ export default function PlacementPage() {
       <PlacementHero />
 
       {/* 2. Original Placements Component (Cards) */}
-      <div className="relative z-10 -mt-10">
-        <SectionDivider type="curve" topColor="#050B14" bottomColor="#F2F7FD" height={70} />
+      <div className="relative z-10">
+        <SectionDivider type="straight" topColor="#050B14" bottomColor="#F2F7FD" height={2} />
       </div>
       <Placements />
 

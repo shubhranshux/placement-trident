@@ -59,13 +59,13 @@ export default function PlacementMarquee() {
 
       <div className="flex marquee-track" style={{ animation: "marquee-scroll 35s linear infinite", width: "max-content" }}>
         {[...Array(2)].map((_, setIdx) => (
-          <div key={setIdx} className="flex items-center gap-8 px-4">
+          <div key={setIdx} className="flex items-center gap-4 sm:gap-8 px-2 sm:px-4">
             {marqueeCompanies.map((name, i) => {
               const Logo = CompanyLogos[name];
               return (
                 <div 
                   key={`${setIdx}-${i}`} 
-                  className="flex items-center gap-3.5 flex-shrink-0 bg-white border border-[#1A2660]/10 px-6 py-3 rounded-full hover:bg-slate-50 hover:border-[#E8BD63]/60 hover:scale-105 transition-all duration-500 group cursor-pointer shadow-md"
+                  className="flex items-center gap-2 sm:gap-3.5 flex-shrink-0 bg-white border border-[#1A2660]/10 px-3 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-slate-50 hover:border-[#E8BD63]/60 hover:scale-105 transition-all duration-500 group cursor-pointer shadow-md"
                 >
                   {Logo ? (
                     <div className="[&>svg]:h-6 [&>svg]:w-auto flex items-center justify-center transition-all duration-500 group-hover:scale-105">
